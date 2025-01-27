@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'CustomFont';
+  src: url('.//assets//Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+}
+::selection{
+  color: rgb(255, 0, 0);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: CustomFont;
+  cursor: none;
+  color: black;
+
+}
+span{
+  color: black;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+html, body{
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+  overflow-x: hidden;
+  
+}
+
+/* Add these base responsive styles to your index.css */
+@layer base {
+  html {
+    font-size: 16px;
+    @screen sm {
+      font-size: 14px;
+    }
+    @screen lg {
+      font-size: 16px;
+    }
+  }
+}
